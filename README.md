@@ -18,8 +18,8 @@ Esta API permite encurtar URLs, gerenciar usuários e autenticação.
 
 ```sh
 # Clone o repositório
-git clone https://github.com/seu-usuario/url-shortener.git
-cd url-shortener
+git clone https://github.com/Brunomestres/teddy-challenge.git
+cd teddy-challenge
 
 # Suba os containers
 docker-compose up -d
@@ -30,8 +30,8 @@ A API estará disponível em `http://localhost:3333`
 
 ```sh
 # Clone o repositório
-git clone https://github.com/seu-usuario/url-shortener.git
-cd url-shortener
+git clone https://github.com/Brunomestres/teddy-challenge.git
+cd teddy-challenge
 
 # Instale as dependências
 npm install
@@ -40,17 +40,17 @@ npm install
 cp .env.example .env
 
 # Rode as migrações do banco
-yarn prisma migrate dev
+npm run db:deploy
 
 # Inicie a API
-npm run start
+npm run start:dev
 ```
 
 ## 📖 Documentação da API
 
 A documentação está disponível via **Swagger** em:
 
-🔗 [`http://localhost:3000/api/docs`](http://localhost:3000/api/docs)
+🔗 [`http://localhost:3000/api`](http://localhost:3000/api)
 
 ## 🔐 Autenticação
 
